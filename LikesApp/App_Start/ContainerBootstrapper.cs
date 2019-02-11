@@ -1,6 +1,9 @@
 using System;
+using System.Web.Http;
+using System.Web.Http.Dispatcher;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
+using LikesApp.Plumbing;
 
 namespace LikesApp.App_Start
 {
@@ -22,6 +25,9 @@ namespace LikesApp.App_Start
         {
             var container = new WindsorContainer().
                 Install(FromAssembly.This());
+
+            GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerActivator), new WindsorWebApiControllerActivator(container));
+
             return new ContainerBootstrapper(container);
         }
 

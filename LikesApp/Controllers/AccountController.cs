@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using LikesApp.Models;
+using LikesApp.EntityFrameworkCore.Identity;
 
 namespace LikesApp.Controllers
 {

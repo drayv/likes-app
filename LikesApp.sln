@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp", "LikesApp\LikesApp.csproj", "{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0380D037-65D0-488C-A662-3AB334AB2092}
+	EndGlobalSection
+EndGlobal

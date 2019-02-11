@@ -1,11 +1,20 @@
 ﻿using System.Web.Mvc;
+using LikesApp.Application.PageLikes;
 
 namespace LikesApp.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IPageLikesService _pageLikesService;
+
+        public HomeController(IPageLikesService pageLikesService)
+        {
+            _pageLikesService = pageLikesService;
+        }
+
         public ActionResult Index()
         {
+            _pageLikesService.Test();
             return View();
         }
 

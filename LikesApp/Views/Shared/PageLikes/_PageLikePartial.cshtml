@@ -1,0 +1,18 @@
+﻿<span>Liked by: <span id="likes-counter">(loading....)</span> users.</span>
+
+@if (Request.IsAuthenticated)
+{
+    <div class="like-container" style="display: none;">
+        <button type="button" class="btn btn-success btn-sm" onClick="likeThisPage();">
+            <span>Like</span>
+        </button>
+    </div>
+
+    <div class="unlike-container" style="display: none;">
+        <button type="button" class="btn btn-success btn-sm" onClick="unlikeThisPage();">
+            <span>Unlike</span>
+        </button>
+    </div>
+}
+
+<br />

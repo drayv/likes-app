@@ -4,15 +4,13 @@ using Castle.Windsor;
 using Castle.Windsor.Installer;
 using LikesApp.Core.PageLikes;
 
-namespace LikesApp.Application.Infrastructure
+namespace LikesApp.Core.Infrastructure
 {
     public class DependencyInstaller : IWindsorInstaller
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Install(FromAssembly.Named("LikesApp.Core"));
-
-            container.Register(Component.For<IPageLikesManager>().ImplementedBy<PageLikesManager>().LifeStyle.Transient);
+            container.Install(FromAssembly.Named("LikesApp.EntityFrameworkCore"));
         }
     }
 }

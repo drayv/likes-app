@@ -5,12 +5,12 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using LikesApp.Models;
-using LikesApp.EntityFrameworkCore.Identity;
+using LikesApp.EntityFramework.Identity;
 
 namespace LikesApp.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : AsyncController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

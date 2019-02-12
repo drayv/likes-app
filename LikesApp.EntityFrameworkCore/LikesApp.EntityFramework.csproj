@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Identity\IdentityModels.cs" />
+    <Compile Include="Infrastructure\DependencyInstaller.cs" />
     <Compile Include="LikesDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PageLikes\IPageLikesRepository.cs" />
@@ -78,9 +79,6 @@
       <Project>{10272bb5-0aad-4286-b562-ec31a9965106}</Project>
       <Name>LikesApp.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

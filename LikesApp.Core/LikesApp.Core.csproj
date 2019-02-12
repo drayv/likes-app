@@ -38,6 +38,7 @@
       <HintPath>..\packages\Castle.Windsor.4.1.1\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Remoting" />
@@ -52,12 +53,9 @@
   <ItemGroup>
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\PageLike.cs" />
+    <Compile Include="Infrastructure\DependencyInstaller.cs" />
     <Compile Include="PageLikes\IPageLikesManager.cs" />
-    <Compile Include="PageLikes\PageLikesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

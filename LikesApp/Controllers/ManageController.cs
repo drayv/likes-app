@@ -11,7 +11,7 @@ using LikesApp.Models;
 namespace LikesApp.Controllers
 {
     [Authorize]
-    public class ManageController : Controller
+    public class ManageController : AsyncController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

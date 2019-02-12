@@ -51,12 +51,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\DependencyInstaller.cs" />
-    <Compile Include="PageLikes\IPageLikesService.cs" />
-    <Compile Include="PageLikes\PageLikesService.cs" />
+    <Compile Include="PageLikes\PageLikesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LikesApp.Core\LikesApp.Core.csproj">
+      <Project>{10272bb5-0aad-4286-b562-ec31a9965106}</Project>
+      <Name>LikesApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LikesApp.EntityFrameworkCore\LikesApp.EntityFramework.csproj">
+      <Project>{744afb16-314a-4d9d-a786-af9e62766237}</Project>
+      <Name>LikesApp.EntityFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

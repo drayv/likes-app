@@ -1,8 +1,8 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Microsoft.AspNet.Identity.EntityFramework;
 using LikesApp.Core.Entities;
-using LikesApp.EntityFrameworkCore.Identity;
+using LikesApp.EntityFramework.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace LikesApp.EntityFrameworkCore
 {

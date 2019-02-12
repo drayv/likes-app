@@ -21,9 +21,7 @@ namespace LikesApp.Core.PageLikes
 
         public async Task<bool> IsLikedByUserAsync(string pageName, int userId)
         {
-            var pageLike = await _pageLikesRepository.SearchAsync(pageName, userId);
-
-            return (pageLike != null);
+            return await _pageLikesRepository.IsExistAsync(pageName, userId);
         }
 
         public async Task LikeAsync(string pageName, int userId)

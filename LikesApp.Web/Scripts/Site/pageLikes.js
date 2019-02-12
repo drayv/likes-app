@@ -1,9 +1,9 @@
 ﻿$(document).ready(function () {
-    $.get("/api/PageLikes/Count", { pageName: window.location.pathname }, function (data) {
+    $.get('/api/PageLikes/Count', { pageName: window.location.pathname }, function (data) {
         $('#likes-counter').html(data);
     });
 
-    $.get("/api/PageLikes/IsLiked", { pageName: window.location.pathname }, function (data) {
+    $.get('/api/PageLikes/IsLiked', { pageName: window.location.pathname }, function (data) {
         if (data) {
             $('.unlike-container').show();
         } else {
@@ -17,7 +17,7 @@ function likeThisPage() {
 
     $.ajax({
         type: 'POST',
-        url: "/api/PageLikes/Like",
+        url: '/api/PageLikes/Like',
         data: JSON.stringify(window.location.pathname),
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
@@ -38,7 +38,7 @@ function unlikeThisPage() {
 
     $.ajax({
         type: 'POST',
-        url: "/api/PageLikes/Unlike",
+        url: '/api/PageLikes/Unlike',
         data: JSON.stringify(window.location.pathname),
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',

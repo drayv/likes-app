@@ -1,11 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Http;
-using Microsoft.AspNet.Identity;
 using LikesApp.Core.PageLikes;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using System.Web;
+using LikesApp.Infrastructure;
 
 namespace LikesApp.WebAPI.PageLikes
 {
@@ -30,7 +26,7 @@ namespace LikesApp.WebAPI.PageLikes
         [Route("api/PageLikes/IsLiked")]
         public async Task<bool> IsLiked([FromUri]string pageName)
         {
-            return await _pageLikesManager.IsLikedByUserAsync(pageName, GetCurrentUserId());
+            return await _pageLikesManager.IsLikedByUserAsync(pageName, this.GetCurrentUserId());
         }
 
         [HttpPost]
@@ -38,7 +34,7 @@ namespace LikesApp.WebAPI.PageLikes
         [Route("api/PageLikes/Like")]
         public async Task Like([FromBody]string pageName)
         {
-            await _pageLikesManager.LikeAsync(pageName, GetCurrentUserId());
+            await _pageLikesManager.LikeAsync(pageName, this.GetCurrentUserId());
         }
 
         [HttpPost]
@@ -46,20 +42,7 @@ namespace LikesApp.WebAPI.PageLikes
         [Route("api/PageLikes/Unlike")]
         public async Task Unlike([FromBody]string pageName)
         {
-            await _pageLikesManager.UnlikeAsync(pageName, GetCurrentUserId());
-        }
-
-        // TODO: Move to base API Controller
-        private int GetCurrentUserId()
-        {
-            try
-            {
-                return HttpContext.Current.User.Identity.GetUserId<int>();
-            }
-            catch
-            {
-                return 0;
-            }
+            await _pageLikesManager.UnlikeAsync(pageName, this.GetCurrentUserId());
         }
     }
 }

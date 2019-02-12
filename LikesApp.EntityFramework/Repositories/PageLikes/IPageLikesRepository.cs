@@ -7,6 +7,8 @@ namespace LikesApp.EntityFramework.Repositories.PageLikes
     {
         Task CreateAsync(PageLike pageLike);
 
+        Task<bool> IsExistAsync(string pageName, int userId);
+
         Task<PageLike> SearchAsync(string pageName, int userId);
 
         Task<long> CountAsync(string pageName);

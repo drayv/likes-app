@@ -1,4 +1,3 @@
-using System;
 using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(LikesApp.App_Start.WindsorActivator), "PreStart")]
@@ -14,7 +13,7 @@ namespace LikesApp.App_Start
         {
             bootstrapper = ContainerBootstrapper.Bootstrap();
         }
-        
+
         public static void Shutdown()
         {
             if (bootstrapper != null)

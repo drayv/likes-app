@@ -21,6 +21,11 @@ namespace LikesApp.EntityFramework.Repositories.PageLikes
             await _likesDbContext.SaveChangesAsync();
         }
 
+        public async Task<bool> IsExistAsync(string pageName, int userId)
+        {
+            return await _likesDbContext.PageLikes.Where(l => l.Page == pageName && l.UserId == userId).AnyAsync();
+        }
+
         public async Task<PageLike> SearchAsync(string pageName, int userId)
         {
             return await _likesDbContext.PageLikes.Where(l => l.Page == pageName && l.UserId == userId).FirstOrDefaultAsync();

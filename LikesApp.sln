@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Web", "LikesApp\LikesApp.Web.csproj", "{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.EntityFramework", "LikesApp.EntityFrameworkCore\LikesApp.EntityFramework.csproj", "{744AFB16-314A-4D9D-A786-AF9E62766237}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.EntityFramework", "LikesApp.EntityFramework\LikesApp.EntityFramework.csproj", "{744AFB16-314A-4D9D-A786-AF9E62766237}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Core", "LikesApp.Core\LikesApp.Core.csproj", "{10272BB5-0AAD-4286-B562-EC31A9965106}"
 EndProject

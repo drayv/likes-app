@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Web", "LikesApp\LikesApp.Web.csproj", "{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.EntityFramework", "LikesApp.EntityFramework\LikesApp.EntityFramework.csproj", "{744AFB16-314A-4D9D-A786-AF9E62766237}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Web", "LikesApp.Web\LikesApp.Web.csproj", "{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Core", "LikesApp.Core\LikesApp.Core.csproj", "{10272BB5-0AAD-4286-B562-EC31A9965106}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.Application", "LikesApp.Application\LikesApp.Application.csproj", "{16A38265-1022-49C8-891D-2771C50C6FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesApp.EntityFramework", "LikesApp.EntityFramework\LikesApp.EntityFramework.csproj", "{744AFB16-314A-4D9D-A786-AF9E62766237}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F3BC2E-AB93-48D5-913B-907BDA9C794B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{744AFB16-314A-4D9D-A786-AF9E62766237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{744AFB16-314A-4D9D-A786-AF9E62766237}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{744AFB16-314A-4D9D-A786-AF9E62766237}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{744AFB16-314A-4D9D-A786-AF9E62766237}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10272BB5-0AAD-4286-B562-EC31A9965106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10272BB5-0AAD-4286-B562-EC31A9965106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10272BB5-0AAD-4286-B562-EC31A9965106}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{16A38265-1022-49C8-891D-2771C50C6FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A38265-1022-49C8-891D-2771C50C6FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A38265-1022-49C8-891D-2771C50C6FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744AFB16-314A-4D9D-A786-AF9E62766237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744AFB16-314A-4D9D-A786-AF9E62766237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744AFB16-314A-4D9D-A786-AF9E62766237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744AFB16-314A-4D9D-A786-AF9E62766237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Threading.Tasks;
 using LikesApp.Core.Entities;
 
-namespace LikesApp.EntityFrameworkCore.Repositories.PageLikes
+namespace LikesApp.EntityFramework.Repositories.PageLikes
 {
     public class PageLikesRepository : IPageLikesRepository
     {

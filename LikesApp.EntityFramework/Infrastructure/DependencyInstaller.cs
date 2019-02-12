@@ -1,9 +1,9 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using LikesApp.EntityFrameworkCore.Repositories.PageLikes;
+using LikesApp.EntityFramework.Repositories.PageLikes;
 
-namespace LikesApp.EntityFrameworkCore.Infrastructure
+namespace LikesApp.EntityFramework.Infrastructure
 {
     public class DependencyInstaller : IWindsorInstaller
     {

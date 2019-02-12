@@ -2,7 +2,7 @@
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using LikesApp.EntityFrameworkCore;
+using LikesApp.EntityFramework;
 
 namespace LikesApp
 {

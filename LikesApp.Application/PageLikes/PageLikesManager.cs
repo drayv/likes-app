@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using LikesApp.Core.Entities;
-using LikesApp.EntityFrameworkCore.Repositories.PageLikes;
+using LikesApp.EntityFramework.Repositories.PageLikes;
 
 namespace LikesApp.Core.PageLikes
 {

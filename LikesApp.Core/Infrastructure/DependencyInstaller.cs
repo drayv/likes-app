@@ -2,7 +2,6 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
-using LikesApp.Core.PageLikes;
 
 namespace LikesApp.Core.Infrastructure
 {
@@ -10,7 +9,7 @@ namespace LikesApp.Core.Infrastructure
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Install(FromAssembly.Named("LikesApp.EntityFrameworkCore"));
+            container.Install(FromAssembly.Named("LikesApp.EntityFramework"));
         }
     }
 }

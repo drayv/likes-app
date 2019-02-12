@@ -6,7 +6,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using LikesApp.EntityFrameworkCore;
+using LikesApp.EntityFramework;
 using LikesApp.EntityFramework.Identity;
 
 namespace LikesApp

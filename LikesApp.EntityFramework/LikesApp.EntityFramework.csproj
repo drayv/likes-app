@@ -7,8 +7,8 @@
     <ProjectGuid>{744AFB16-314A-4D9D-A786-AF9E62766237}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LikesApp.EntityFrameworkCore</RootNamespace>
-    <AssemblyName>LikesApp.EntityFrameworkCore</AssemblyName>
+    <RootNamespace>LikesApp.EntityFramework</RootNamespace>
+    <AssemblyName>LikesApp.EntityFramework</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

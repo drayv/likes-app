@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LikesApp.EntityFrameworkCore")]
+[assembly: AssemblyTitle("LikesApp.EntityFramework")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LikesApp.EntityFrameworkCore")]
+[assembly: AssemblyProduct("LikesApp.EntityFramework")]
 [assembly: AssemblyCopyright("Copyright © Maksym Shchyhol 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

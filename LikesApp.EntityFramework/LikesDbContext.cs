@@ -4,7 +4,7 @@ using LikesApp.Core.Entities;
 using LikesApp.EntityFramework.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace LikesApp.EntityFrameworkCore
+namespace LikesApp.EntityFramework
 {
     public class LikesDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, int, ApplicationUserLogin, ApplicationUserRole, ApplicationUserClaim>
     {
